@@ -3,3 +3,7 @@ function init --on-event rbenv_init
   set -gx PATH $HOME/.rbenv $PATH
   eval (rbenv init - | psub)
 end
+
+function rbenv
+  command rbenv
+end
