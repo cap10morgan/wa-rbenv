@@ -1,7 +1,7 @@
 function init --on-event init_rbenv
-  setenv PATH "$HOME/.rbenv/bin" "$HOME/.rbenv/shims" $PATH
-  setenv RBENV_SHELL fish
-  source "$HOME/completions/rbenv.fish"
+  set -gx PATH "$HOME/.rbenv/bin" "$HOME/.rbenv/shims" $PATH
+  set -gx RBENV_SHELL fish
+  source "$HOME/.rbenv/completions/rbenv.fish"
   rbenv rehash 2>/dev/null
 end
 
